@@ -73,6 +73,8 @@
     <Content Include="bai6_nested_ng_repeat.html" />
     <Content Include="bai5_directive.html" />
     <Content Include="bai7_handle_event.html" />
+    <Content Include="bai8_sudungfilter.html" />
+    <Content Include="scripts\bai8_sudungfilter.js" />
     <Content Include="customDirective.html" />
     <Content Include="scripts\bai5_directive.js" />
     <Content Include="scripts\bai6_nested_ng_repeat.js" />
