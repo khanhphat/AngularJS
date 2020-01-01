@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Bài 6: sử dụng nested ng-repeat directive</title>
+    <script src="scripts/angular.min.js"></script>
+    <script src="scripts/bai6_nested_ng_repeat.js"></script>
+</head>
+<body ng-app="app">
+    <div ng-controller="nestedRepeatController">
+        <ul>
+            <li ng-repeat="country in countries" ng-init="parentIndex = $index">
+                {{country.name}} - index {{$index}}
+                <ul>
+                    <li ng-repeat="city in country.cities">
+                        {{city.name}} - index {{$index}} - Parent index - {{parentIndex}}
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

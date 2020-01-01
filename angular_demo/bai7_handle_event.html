@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Bài 7 bắt sự kiện</title>
+    <script src="scripts/angular.min.js"></script>
+    <script src="/scripts/bai7_handle_event.js"></script>
+</head>
+<body ng-app="handleEvent">
+    <div ng-controller="handleEventController">
+        <table>
+            <tr>
+                <td>Name</td>
+                <td>Like</td>
+                <td>Aciton</td>
+            </tr>
+            <tr ng-repeat="technology in technologies">
+                <td>{{technology.name}}</td>
+                <td>{{technology.like}}</td>
+                <td>
+                    <!--truyen luon doi tuong vao: technology-->
+                    <button ng-click="increaseLike(technology)">Like</button>
+                    <button ng-click="increaseDislike(technology)">Dislike</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

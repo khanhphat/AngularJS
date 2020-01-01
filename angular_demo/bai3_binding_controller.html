@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html ng-app="myModule">
+<head>
+    <meta charset="utf-8" />
+    <title>Bài 3: Binding đối tượng từ Controller ra View</title>
+    <script src="scripts/angular.min.js"></script>
+    <!--<script src="scripts/bai3.js"></script>-->
+    <script src="scripts/bai3_cach2.js"></script>
+</head>
+<body ng-controller="myController">
+    <!--1.binding tu controller sang view-->
+    <div>
+        First Name: {{employee.FirstName}} <br />
+        Last Name: {{employee.LastName}} <br />
+        Gender: {{employee.Gender}} <br />
+    </div>
+    <!--2.tu view sang controller-->
+    First Name: <input type="text" ng-model="employee.FirstName" /> <br />
+    Last Name: <input type="text" ng-model="employee.LastName" /> <br />
+    Gender: <input type="text" ng-model="employee.Gender" /> <br />
+  
+
+</body>
+</html>
